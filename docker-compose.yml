@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  classifier:
+    build: .
+    image: classifier-image:3.5.1
+    container_name: classifier-container
+    volumes:
+      - /data/data-04_b_22.7TB/Data_AML/:/data/:rw
+
