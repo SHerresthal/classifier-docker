@@ -1,3 +1,4 @@
-install.packages(c("data.table", "class", "e1071", "ROCR", "pamr", "MASS", "randomForest", "glmnet", "foreach", "doParallel", "dplyr", "pamr"))
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("multtest", "affy", "limma"))
+install.packages("devtools")
+library(devtools)
+devtools::install_github("SHerresthal/classifier-package")
+library(classifier)
